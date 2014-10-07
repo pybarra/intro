@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+
+<head>
+	<title>Ejemplo de formulario sencillo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+ 
+<h3>Formulario muy sencillo</h3>
+ 
+<form action="http://www.librosweb.es/maneja_formulario.php" method="post">
+ 
+  Escribe tu nombre:
+  <input type="text" name="nombre" value="" /><br/>
+
+ Mòbil:
+ <input type="text" name="mòbil" value="" /><br/>
+ 
+ Sexo <br/>
+<input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+<input type="radio" name="sexo" value="mujer" /> Mujer<br/>
+
+Puestos de trabajo buscados <br/>
+<input name="puesto_directivo" type="checkbox" value="direccion"/> Dirección
+<input name="puesto_tecnico" type="checkbox" value="tecnico"/> Técnico
+<input name="puesto_empleado" type="checkbox" value="empleado"/> Empleado
+ 
+  <input type="submit" value="Enviar" />
+</form>
+ 
+ <h3>Rellena tu CV</h3>
+ 
+ <form action="http://www.librosweb.es/insertar_cv.php" method="post">
+	 <label for="nombre">Nombre</label>
+	 <input type="text" id="nombre" name="nombre" value=""/><br/>
+	 <br/>
+	 
+	 Apellidos
+	 <input type="text" name="apellidos" value=""/><br/>
+	 <br/>
+	 
+	 Contraseña
+	 <input type="password" name="contrasena" value=""/><br/>
+	 <br/>
+	 
+	 DNI
+	 <input type="text" name="dni" value=""/><br/>
+	 <br/>
+	 
+	  Sexo <br/>
+	<input type="radio" name="sexo" value="hombre" checked="checked"/> Hombre
+	<input type="radio" name="sexo" value="mujer"/> Mujer<br/>
+	<br/>
+	
+	Incluir mi foto <input type="file" name="foto"/><br/>
+	<br/>
+	
+	<input name="suscribir" type="checkbox" value="suscribir" checked="checked"/>Suscribirme al boletín de novedades<br/>
+	
+<br/>
+	<input type="submit" name="enviar" value="Guardar cambios"/>
+	<input type="reset" name="limpiar" value="Borrar los datos introducidos"/>
+	 
+ 
+</body>
+</html>
+

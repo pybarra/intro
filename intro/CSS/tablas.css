@@ -1,0 +1,22 @@
+table {
+	border-collapse: collapse;
+}
+
+
+.pedido { 
+
+border: 1px solid red;
+	}
+	
+	
+.resultado { 
+
+border: 1px solid blue;
+	}
+
+
+.MP3 {
+
+border: 1px solid green;
+text-align: center;
+	}
