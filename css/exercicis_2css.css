@@ -1,0 +1,38 @@
+h1 { color: teal;
+}
+
+h2 { color: blue;
+}
+
+caption {color: blue;
+}
+
+th .especial { color: orange;
+}
+
+th { color: red;
+}
+
+td { color: green;
+}
+
+em { color: green;
+}
+
+strong { color: orange;
+}
+
+p strong { color: red;
+}
+
+p .destacado { color: orange;
+}
+
+p a { color: green;
+}
+
+p em { color: blue;
+}
+
+p .especial { color: purple;
+}
