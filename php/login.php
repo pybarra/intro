@@ -26,7 +26,7 @@
 			echo "<h1>Benvingut ".$row['usuari']." " .$row['nom']." " .$row['llinatge']." " .$row['llinatge2']. "</h1>";
 		}else{
 			echo "LOGIN INCORRECTE<BR>";
-			echo "<h1>Error</h1>";
+			echo "<h1><a href='login.html'>Error</a></h1>";
 		}
 		?>
 		
