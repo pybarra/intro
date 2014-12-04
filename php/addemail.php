@@ -22,12 +22,13 @@
 	$query = "INSERT INTO email_list (first_name, last_name, email) " .
 	"VALUES ('$first_name', '$last_name','$email')";
 	
-	echo "___".$query."<br/>";
+	
 	$result = mysqli_query($dbc, $query)
 	or die('Error querying database.');
 	mysqli_close($dbc);
 	?>
 	
+	<h1>Benvingut <?= $first_name?> <?= $last_name?> </h1>
 </body>
 
 </html>
