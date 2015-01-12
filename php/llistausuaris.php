@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title>sense títol</title>
+	<title>Llista usauris</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="generator" content="Geany 1.22" />
 </head>
@@ -19,7 +19,7 @@
 	 <table border='1'>
 			<tr>
 				<th>&nbsp;</th>
-				<th>Usuari______________</th>
+				<th>Usuari</th>
 				<th>Nom</th>
 				<th>Llinatge</th>
 				<th>Llinatge2</th>
@@ -29,12 +29,12 @@
 		?>
 		<tr>
 			<td>&nbsp;</td>
-			<td><a href="updateuser.php?id=<?= $row['id']?>"><?=$row['Usuari']?></td>
+			<td><a href="updateuser.php?id=<?= $row['id']?>"><?=$row['Usuari']?></a></td>
 			<td><?=$row['Nom']?></td>
 			<td><?=$row['Llinatge']?></td>
 			<td><?=$row['Llinatge2']?></td>
 		</tr>
-
+		
 		<?php
 		}
 	?>
