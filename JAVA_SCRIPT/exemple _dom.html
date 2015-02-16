@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Exemple DOM</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.22" />
+	<script>
+	
+	window.onload = function(){
+		var links=document.getElementsByTagName("a");
+		var cadena = "Hi ha "+links.length+" enllaços";
+
+
+		//seleccionam el destí de la informació
+		var info=document.getElementById("informacion");
+		
+		//cream un node de tipus paràgref
+		var paragraf=document.createElement("p");
+		
+		//cream un node de tipus texte
+		var contingut=document.createTextNode(cadena);
+		
+		//afegim el texte al paràgraf
+		paragraf.appendChild(contingut);
+		
+		//penjar el paràgraf a l'element destí
+		info.appendChild(paragraf);
+		
+		for (var i=0;i<links.length;i++){
+		var cadena2="enllaç "+i+" "+links[i];
+		var info=document.getElementById("informacion");
+		var paragraf=document.createElement("p");
+		var contingut=document.createTextNode(cadena2);
+		paragraf.appendChild(contingut);
+		info.appendChild(paragraf);
+		}
+	}
+	</script>
+</head>
+
+<body>
+	
+	<div id="informacion"></div>
+	
+	<p
+	
+	<p>
+		<a href="http://www.google.com">Google</a><br/>
+		<a href="http://www.esliceu.com">Es Liceu</a><br/>
+		<a href="http://www.esliceu.com">Es Liceu</a>
+	</p>
+	
+</body>
+
+</html>

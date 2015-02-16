@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Ejercicio 15</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.22" />
+	<style type="text/css">
+	body {font-family: arial, helvetica;}
+	#info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
+	#info h1 {margin: 0;}
+	</style>
+	<script>
+		window.onload=function(){
+				document.onclick=informacion;
+				document.onkeypress=informacion;
+				document.onmousemove=informacion;
+		}
+		
+			function informacion(event){
+			var evento=event || window.event;
+			var info=document.getElementById("info");
+			switch (evento.type){
+					case "keypress":
+						document.getElementById('info').style.backgroundColor = '#CCE6FF';
+						
+						var codigo = evento.charCode || evento.keyCode;
+						var letra = String.fromCharCode(codigo);
+						info.innerHTML=""; //ESBORRA EL DIV
+						
+						var text=document.createTextNode("Teclat");
+						var h1=document.createElement("h1");
+						h1.appendChild(text);
+						info.appendChild(h1);
+						
+						//CREAR UN P PER EL CODI
+						var p=document.createElement("p");
+						var text=document.createTextNode("Codi: "+codigo);
+						p.appendChild(text);
+						info.appendChild(p);
+						 
+						//CREAR UNP PER LA LLETRA
+						 var p=document.createElement("p");
+						 var text=document.createTextNode("Lletra: "+letra);
+						p.appendChild(text);
+						info.appendChild(p);
+						
+						break;
+					case "click":
+						document.getElementById('info').style.backgroundColor = '#FFFFCC';
+						break;
+					case "mousemove":
+						document.getElementById('info').style.backgroundColor = '#FFFFFF';
+						var clientX=evento.clientX;
+						var clientY=evento.clientY;
+						info.innerHTML=""; //ESBORRA EL DIV
+						var text=document.createTextNode("Ratolí");
+						var h1=document.createElement("h1");	
+						h1.appendChild(text);
+						info.appendChild(h1);
+						
+						//cordenades del navegador
+						var text=document.createTextNode("Navegador ["+clientX+","+clientY+"]");
+						  var p=document.createElement("p");
+                            p.appendChild(text);
+                            info.appendChild(p);
+                            //cordenades de la pagina
+                            var text=document.createTextNode("Pagina [,]");
+                            var p=document.createElement("p");
+                            p.appendChild(text);
+                            info.appendChild(p);
+                            
+						break;
+						
+						
+				}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="info"></div>
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	
+</body>
+
+</html>

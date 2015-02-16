@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Ejercicio 12</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.22" />
+	
+	<style type="text/css">
+	.oculto { display: none; }
+	.visible { display: inline; }
+	</style>
+	 
+	<script type="text/javascript">
+	function muestra() {
+		  var elemento = document.getElementById("adicional");
+		 
+		  if(elemento.className =="oculto"){
+				 elemento.className ="visible";
+			}else{
+				elemento.className ="oculto"; 
+		}
+	}
+	</script>
+	
+</head>
+ 
+<body>
+ 
+	<p id="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. 
+	Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. 
+	Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. 
+	Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+	<span id="adicional" class="oculto">Nullam sit amet nisl elementum elit convallis malesuada. 
+	Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. 
+	Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. 
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. 
+	Donec arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus.
+	Vestibulum venenatis erat eu odio. Praesent id metus.</span></p>
+	
+	<a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
+	
+</body>
+
+</html>
